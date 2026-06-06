@@ -8,7 +8,7 @@ import projectImg4 from '../assets/project4.avif';
 import projectImg5 from '../assets/project5.avif';
 import projectImg6 from '../assets/project6.avif';
 import profilePicture from '../assets/IMG_9531.PNG';
-import PMO_image from '../assets/pmo_image.PNG';
+import PMO_image from '../assets/pmo_image.png';
 import sales_performance from '../assets/sales_performance_analytics.png';
 import data_model_checker from '../assets/data_model_checker.png';
 
