@@ -87,7 +87,7 @@ export const projects = [
     title: "Sales Performance Analytics",
     description: "Designed and built an automated Python-based ETL pipeline to transform and load relational datasets into a structured MySQL database, executing complex SQL queries to generate actionable business insights.",
     image: sales_performance,
-    tech: ["Python", "MySQL", "Pandas", "Seaborn", "Matplotlib"],
+    tech: ["Power BI", "MySQL"],
     icons: [FaReact, FaNodeJs, FaDatabase , FaStripe],
     githubUrl: "https://github.com/shwetanagdev1/Sales-Insight-Dashboard"
   },
