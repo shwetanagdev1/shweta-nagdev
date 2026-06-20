@@ -89,17 +89,14 @@ export const projects = [
     image: sales_performance,
     tech: ["Python", "MySQL", "Pandas", "Seaborn", "Matplotlib"],
     icons: [FaReact, FaNodeJs, FaDatabase , FaStripe],
-    demo: "#",
-    code: "#",
+    githubUrl: "https://github.com/shwetanagdev1/Sales-Insight-Dashboard"
   },
   {
     title: "Project Centre Quality Report",
     description: "Developed an interactive PMO tracking dashboard by integrating over 300 projects via the SharePoint API, utilizing Power Query for high-precision data cleaning and executive reporting cost oversight.",
     image: PMO_image,
     tech: ["Power BI", "SharePoint Online", "Power Query"],
-    icons: [FaVuejs, FaFire, FaCloud , FaDatabase],
-    demo: "#",
-    code: "#",
+    icons: [FaVuejs, FaFire, FaCloud , FaDatabase]
   },
   {
     title: "Data Model Checker",
@@ -107,8 +104,7 @@ export const projects = [
     image: data_model_checker,
     tech: ["Python", "MySQL"],
     icons: [FaReact, FaDatabase],
-    demo: "#",
-    code: "#",
+    githubUrl: "https://github.com/shwetanagdev1/Data-Model-Checker"
   }
 ];
 

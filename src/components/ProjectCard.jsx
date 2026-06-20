@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProjectCard = ({title, description, image, tech}) => {
+const ProjectCard = ({title, description, image, tech, githubUrl}) => {
   return (
     <div className= 'bg-dark-300 rounded-2xl overflow-hidden hover:-translate-y-2 transition duration-300 cursor-pointer'>
         <img src={image} alt={title} className='w-full h-60 object-cover' />
@@ -16,17 +16,24 @@ const ProjectCard = ({title, description, image, tech}) => {
                     
                 ))}
             </div>
-            <div className='flex gap-2'>
-                <a href='#' className='flex-1 text-center px-4 py-2 bg-purple 
-                rounded-lg font-medium hover:bg-purple-700 transition duration-300'>
-                    View Demo
-                </a>
-                <a href='#' className='flex-1 text-center px-4 py-2 border
-                border-purple font-medium rounded-lg hover:bg-purple/20
-                transition duration-300'>
-                    Code
-                </a>
 
+            <div className='flex mt-4'>
+                {githubUrl && githubUrl !== '#' ? (
+                    /* Active Link for Public Projects */
+                    <a 
+                        href={githubUrl} 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className='w-full text-center px-4 py-2 bg-purple rounded-lg font-medium hover:bg-purple-700 transition duration-300'
+                    >
+                        View GitHub Repository
+                    </a>
+                ) : (
+                    /* Disabled Button for Confidential Corporate Projects */
+                    <span className='w-full text-center px-4 py-2 bg-dark-400 text-gray-500 rounded-lg font-medium border border-dark-500 select-none'>
+                        Internal Corporate Project
+                    </span>
+                )}
             </div>
 
         </div>
